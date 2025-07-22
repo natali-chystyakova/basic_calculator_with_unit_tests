@@ -1,0 +1,46 @@
+>>> from class_calculator import Calculator
+>>> a=Calculator(1)
+>>> b=Calculator(2)
+>>> c = a + b
+>>> print(c)
+3
+
+
+>>> Calculator("1") + Calculator(2)
+Traceback (most recent call last):
+    ...
+TypeError: Operands must be of compatible types
+
+>>> d = b - a
+>>> print(d)
+1
+>>> e = b * a
+>>> print(e)
+2
+>>> g = b ** a
+>>> print(g)
+2
+
+>>> Calculator(2) ** Calculator(-1)
+Traceback (most recent call last):
+    ...
+ValueError: Exponent must be non-negative
+
+>>> Calculator("2") ** Calculator(3)
+Traceback (most recent call last):
+    ...
+TypeError: Operands must be of compatible types
+
+>>> k = Calculator(9)
+>>> l = k.sqrt()
+>>> print(l)
+3.0
+>>> Calculator(-4).sqrt()
+Traceback (most recent call last):
+    ...
+ValueError: Cannot extract square root from negative number
+
+>>> Calculator("abc").sqrt()
+Traceback (most recent call last):
+    ...
+TypeError: Operands must be of compatible types

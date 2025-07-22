@@ -1,0 +1,29 @@
+
+>>> from basic_calculator import addition, subtraction, multiplication, division, power, sqroot
+>>> addition(4, 5)
+9
+>>> addition(4, -4)
+0
+>>> subtraction(5, 1)
+4
+>>> multiplication(5, 1)
+5
+>>> division(4, 2)
+2.0
+>>> division(5, 0)
+Traceback (most recent call last):
+        ...
+ValueError: --Division by zero--
+>>> power(2, 2)
+4.0
+>>> power(5, -5)
+Traceback (most recent call last):
+        ...
+ValueError: --Not available in basic calculator--
+>>> sqroot(4)
+2.0
+>>> sqroot(-5)
+Traceback (most recent call last):
+        ...
+ValueError: --Must be positive--
+
