@@ -1,3 +1,4 @@
+
 import math
 
 def addition(a, b):
@@ -23,3 +24,20 @@ def sqroot(a):
     if a < 0:
         raise ValueError("--Must be positive--")
     return math.sqrt(a)
+
+# если тесты и программа в одном файле:
+# if __name__=='__main__':
+#     import doctest
+#     doctest.testmod()
+
+# запуск doctest через коммандную строку:
+# python -m doctest -v basic_calculator.py
+
+
+# если тесты в отдельном файле:
+# if __name__=='__main__':
+#     import doctest
+#     doctest.testfile("doctests.txt")
+
+# запуск doctest через коммандную строку:
+# python -m doctest -v doctests.txt
