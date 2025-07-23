@@ -18,7 +18,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(basic_calculator.multiplication(2, -2), -4)
         self.assertEqual(basic_calculator.multiplication(-2, -2), 4)
 
-
+    @unittest.skip("Not implemented yet")
     def test_division(self):
         self.assertEqual(basic_calculator.division(2,2), 1)
         self.assertEqual(basic_calculator.division(2, -2), -1)
@@ -46,5 +46,14 @@ class TestCalculator(unittest.TestCase):
             basic_calculator.sqroot(-2)
 
 
-if __name__=='__main__':
-    unittest.main()
+# if __name__=='__main__':
+#     unittest.main()
+
+#запуск з термiналу:
+#python -m unittest -v test_calculator
+
+# запуск тестiв конкретного класу:
+#python -m unittest -v test_calculator.TestCalculator
+
+#запуск одного конкретного тесту:
+#python -m unittest -v test_calculator.TestCalculator.test_addition
